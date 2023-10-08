@@ -1,0 +1,150 @@
+targil 1:
+import java.util.Scanner;
+class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a name");
+        String name1 = scan.nextLine();
+        System.out.println("Enter a name");
+        String name2 = scan.nextLine();
+        System.out.println("Enter a name");
+        String name3 = scan.nextLine();
+        if ((name1.compareTo(name2)<0) && (name2.compareTo(name3)<0))
+            System.out.println(name1 + " " + name2 + " " + name3);
+        else if ((name1.compareTo(name3)<0) && (name3.compareTo(name2)<0))
+            System.out.println(name1 + " " + name3 + " " + name2);
+        else if ((name2.compareTo(name1)<0) && (name1.compareTo(name3)<0))
+            System.out.println(name2 + " " + name1 + " " + name3);
+        else if ((name2.compareTo(name3)<0) && (name3.compareTo(name1)<0))
+            System.out.println(name2 + " " + name3 + " " + name1);
+        else if ((name3.compareTo(name2)<0) && (name2.compareTo(name1)<0))
+            System.out.println(name3 + " " + name2 + " " + name1);
+        else if ((name3.compareTo(name1)<0) && (name1.compareTo(name2)<0))
+            System.out.println(name3 + " " + name1 + " " + name2);
+    }
+}
+targil 2:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+         Scanner scan = new Scanner(System.in);
+         System.out.println("enter your Sentence: ");
+         String Sentence=scan.nextLine();
+         int spaceCount = 0;
+         for(char i : Sentence.toCharArray())
+         {
+              if (i == ' ') 
+              {
+                spaceCount++;
+                if(spaceCount==4)
+                {
+                    int size=Sentence.length();
+                    System.out.println(size);
+                }
+              }
+         }
+
+    }
+}
+targil 3:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+         Scanner scan = new Scanner(System.in);
+         System.out.println("enter your string:  ");
+         String str=scan.nextLine();
+         int size=str.length();
+         if(size==3)
+         {
+             for(int i=0;i<str.length();i++)
+             {
+                 for(int j=0;j<str.length();j--)
+                 {
+                     if(i==j)
+                     {
+                         System.out.println("TRUE");
+                     }
+                 }
+             }
+         }
+         else
+         {
+             System.out.println("FALSE");
+         }
+    }
+}
+targil 4:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+         Scanner scan = new Scanner(System.in);
+         System.out.println("enter your word:  ");
+         String str=scan.nextLine();
+         int size=str.length();
+         if(size==3)
+         {
+            System.out.println("the revers is: "+str.charAt(2)+str.charAt(1)+str.charAt(0));
+         }
+         
+    }
+}
+targil 5:
+import java.util.Scanner;
+class HelloWorld 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scan = new Scanner(System.in);
+        StringBuilder modifiedSentence = new StringBuilder();
+        System.out.println("Enter a string");
+        String Sentence = scan.nextLine();
+        int size=Sentence.length();
+        for(int i=0; i<size; i++)
+        {
+            char c=Sentence.charAt(i);
+            if(c=='a' || c=='u' || c=='e' || c=='i' || c=='o')
+                modifiedSentence.append('*');
+            else 
+                modifiedSentence.append(c);
+        }
+        System.out.println(modifiedSentence.toString());
+    }
+}
+targil 6:
+import java.util.Random;
+class HelloWorld
+{
+    public static void main(String []args)
+    {
+        int num;
+        Random r=new Random();
+        num=r.nextInt(100)+1;
+        System.out.println(num);
+        if(num<10)
+        {
+            System.out.println("Single-digit");
+            if(num%3==0)
+            {
+                System.out.println("The number is divisible by three");
+            }
+            else if(num%4==0)
+            {
+                System.out.println("The number is divisible by four");
+            }
+        }
+        else
+        {
+            System.out.println("Double digit");
+            if(num%3==0)
+            {
+                System.out.println("The number is divisible by three");
+            }
+            else if(num%4==0)
+            {
+                System.out.println("The number is divisible by four");
+            }
+        }
+    }
+}
