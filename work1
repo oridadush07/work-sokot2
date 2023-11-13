@@ -1,0 +1,150 @@
+targil 1:
+import java.util.Scanner;
+public class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter your name: ");
+        String name=scan.nextLine();
+        f1(name);
+    }
+        public static void f1(String name)
+        {
+        System.out.println("Hello " + name);
+        }
+}
+
+targil 2:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter a number:  ");
+        int num=scan.nextInt();
+        f1(num);
+ 
+    }
+    public static void f1(int num )
+    {
+        System.out.println("the number is :"+ num/5);
+    }
+}
+
+targil 3:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter a number:  ");
+        int num1=scan.nextInt();
+        System.out.println("enter a number:  ");
+        int num2=scan.nextInt();
+        int result = f1(num1, num2);
+        System.out.println("Result: " + result);
+    }
+    public static int f1(int num1 , int num2)
+    {
+        int x=num1*num2;
+        return (x);
+    }
+}
+
+targil 4:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter a number:  ");
+        int num1=scan.nextInt();
+        System.out.println("enter a number:  ");
+        int num2=scan.nextInt();
+        System.out.println("enter a number:  ");
+        int num3=scan.nextInt();
+        int result = f1(num1, num2, num3);
+        System.out.println("Result: " + result);
+    }
+    public static int f1(int num1 , int num2 , int num3)
+    {
+        int x=num1+num2+num3;
+        System.out.println(x);
+        int y=x/3;
+        return (y);
+    }
+}
+
+targil 5:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter the Radius of the circle:  ");
+        int R=scan.nextInt();
+        f1(R);
+ 
+    }
+    public static void f1(int R )
+    {
+        double x=3.14;
+        System.out.println("the P is:"+ x*2*R);
+        System.out.println("the S is:"+ x*R*R);
+    }
+}
+
+targil 6:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter a :  ");
+        int a=scan.nextInt();
+        System.out.println("enter b :  ");
+        int b=scan.nextInt();
+        int result = f1(a, b);
+        System.out.println("c : " + result);
+    }
+    public static int f1(int a , int b)
+    {
+        int c= a*a+b*b;
+        return (c);
+    }
+}
+
+targil 7:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter a letter:  ");
+        char a = scan.next().charAt(0);
+        System.out.println("enter a letter:  ");
+        char b = scan.next().charAt(0);
+        System.out.println("enter a letter:  ");
+        char c = scan.next().charAt(0);
+        f1(a, b, c);
+ 
+    }
+    public static void f1(char a, char b, char c )
+    {
+        System.out.println(c + " " + b + " " + a);
+    }
+}
+
+targil 8:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter a1 :  ");
+        int a1=scan.nextInt();
+        System.out.println("enter n :  ");
+        int n=scan.nextInt();
+        System.out.println("enter d :  ");
+        int d=scan.nextInt();
+        int result = f1(a1, n, d );
+        System.out.println("an : " + result);
+    }
+    public static int f1(int a1 , int n, int d)
+    {
+        int an= a1+(n-1)*d;
+        return (an);
+    }
+}
